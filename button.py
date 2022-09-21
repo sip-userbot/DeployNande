@@ -4,7 +4,7 @@
 from text import Data
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
-from .prime import prime
+from Nande import Nande
 
 ERROR_MESSAGE = "Oops! \n\n**Error kack🥺** : {} " \
             "\n\nTolong Laporan ke @Klyuserbot jika eror "
@@ -27,11 +27,11 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(Data.buttons),
             )
 
-    elif query in ["prime", "en"]:
+    elif query in ["ayiin", "en"]:
         await callback_query.answer()
         try:
-            if query == "prime":
-                await prime(bot, callback_query.message, en=True)
+            if query == "ayiin":
+                await ayiin(bot, callback_query.message, en=True)
         except Exception as e:
             await callback_query.message.reply(ERROR_MESSAGE.format(str(e)))
     
