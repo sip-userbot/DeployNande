@@ -6,8 +6,8 @@ from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from .prime import prime
 
-ERROR_MESSAGE = "Oops! \n\n**Error🥺** : {} " \
-            "\n\nTolong Laporan ke @diemmmmmmmmmm jika eror "
+ERROR_MESSAGE = "Oops! \n\n**Error kack🥺** : {} " \
+            "\n\nTolong Laporan ke @Klyuserbot jika eror "
 
 # Callbacks
 @Client.on_callback_query()
