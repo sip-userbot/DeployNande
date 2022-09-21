@@ -6,19 +6,19 @@ class Data:
     # Start Message
 
     START = """
-Halo 🙋 {}
+Halo 👋 {}
 Saya adalah {}
-Bot ini berfungsi untuk menjalankan Prime Userbot Diheroku.
+Bot ini berfungsi untuk menjalankan Nande - Userbot Diheroku.
 Dengan Mudah\n
 #Wajib
 ❗INFO MEMBUATNYA MEMBUTUHKAN AKUN HEROKU\n
 Terimakasih ...
-Maintened bot by @PandaUserbot
+Maintened bot by @suportsipuserbot
     """
 
 
     # 
     buttons = [     
-        [InlineKeyboardButton("Prime-Userbot", callback_data="prime")],]
+        [InlineKeyboardButton("Nande-Userbot", callback_data="Nande")],]
    
     
