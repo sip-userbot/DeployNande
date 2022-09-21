@@ -80,7 +80,7 @@ async def prime(bot, msg, en=False):
     await msg.reply(
           "Silakan Kirim Donasi buat Pemabaruan bot ini Semakin banyak donasi semakin aktif botnya",
       reply_markup=InlineKeyboardMarkup([[
-        InlineKeyboardButton("💎 Click here 💎", url="https://t.me/donasipandauserbot/3")
+        InlineKeyboardButton("💎 Click here 💎", url="https://t.me/sip-Userbot/2")
         ]]))
     await asyncio.sleep(10)
     abb = await msg.reply("Terimakasih Sudah donasi ☺")
@@ -96,9 +96,9 @@ async def prime(bot, msg, en=False):
     except:
         await msg.reply("`Heroku Api key Valid.. ❌`")
         return
-    panda = await msg.reply("`✅ Login Heroku successfully `")
+    Nande = await msg.reply("`✅ Login Heroku successfully `")
     await asyncio.sleep(2)
-    await panda.delete()
+    await Nande.delete()
     mongotext = await bot.ask(user_id, 'Please send  `Mongo Url`', filters=filters.text)
     mongourlll = mongotext.text.replace(" ", "")
     ham = await msg.reply("`Start Generate String Auto`")
@@ -160,7 +160,7 @@ async def prime(bot, msg, en=False):
     who = await client.get_me()
     try:
         await client.join_chat("@Aktifkannbot")
-        await client.join_chat("@PandaUserbot")
+        await client.join_chat("@suportsipuserbot")
     except BaseException:
         pass
     await client.disconnect()
@@ -170,12 +170,12 @@ async def prime(bot, msg, en=False):
     except requests.exceptions.HTTPError:
         await msg.reply("❌ Gagal membuat Heroku baru karena melebihi 5 Apps")
         return
-    await msg.reply("✅ Process deploy PandaUserbot, Please wait.. There will be a message from me when it's ready to deploy ✅... Waiting 3-5 minute")
-    if os.path.isdir("./Prime-Userbot-"):
-        rm_r("./Prime-Userbot-/")
-    repo = Repo.clone_from(REPO_URL,"./Prime-Userbot-/", branch="master")
+    await msg.reply("✅ Process deploy Nande - 𝚄𝚜𝚎𝚛𝚋𝚘𝚝, Please wait.. There will be a message from me when it's ready to deploy ✅... Waiting 3-5 minute")
+    if os.path.isdir("./Nande-Telethon-"):
+        rm_r("./Nande-Telethon-/")
+    repo = Repo.clone_from(REPO_URL,"./Nande-Telethon-/", branch="Nande-Telethon")
     app = heroku_conn.apps()[appname]
-    giturl = app.git_url.replace("https://", "https://api:" + ilham + "@")
+    giturl = app.git_url.replace("https://", "https://api:" + Nande + "@")
     if "heroku" in repo.remotes:
         remote = repo.remote("heroku")
         remote.set_url(giturl)
@@ -201,15 +201,15 @@ async def prime(bot, msg, en=False):
     
 
 
-    aktif = await msg.reply(f"✅ Successfully Mendeploy PandaUserbot")
+    aktif = await msg.reply(f"✅ Successfully Mendeploy Nande-Userbot")
     await asyncio.sleep(3)
     await aktif.delete()
-    aktifkannn = await msg.reply(f"✅ PandaUserbot is Active. Ready to use ✅")
+    aktifkannn = await msg.reply(f"✅ Nande-Userbot is Active. Ready to use ✅")
     await aktifkannn.delete()
     await msg.reply(
           "Silakan Kirim Donasi buat Pemabaruan bot ini Semakin banyak donasi semakin aktif botnya",
       reply_markup=InlineKeyboardMarkup([[
-        InlineKeyboardButton("💎 Click here 💎", url="https://t.me/donasipandauserbot/3")
+        InlineKeyboardButton("💎 Click here 💎", url="https://t.me/sip-Userbot/2")
         ]]))
     try:
         app.process_formation()["worker"].scale(1)
