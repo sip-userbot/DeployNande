@@ -19,6 +19,6 @@ Maintened bot by @suportsipuserbot
 
     # 
     buttons = [     
-        [InlineKeyboardButton("Nande-Userbot", callback_data="Nande")],]
+        [InlineKeyboardButton("Nande-Userbot", callback_data="ayiin")],]
    
     
