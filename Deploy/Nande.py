@@ -55,7 +55,6 @@ from telethon.tl.types import (
     InputChatUploadedPhoto,
 )
 
-from Heroku.encode import encode
 from logging import INFO, WARNING, FileHandler, StreamHandler, basicConfig, getLogger
 LOGS = getLogger("Heroku")
 
