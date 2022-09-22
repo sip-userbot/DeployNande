@@ -58,7 +58,7 @@ from telethon.tl.types import (
 from logging import INFO, WARNING, FileHandler, StreamHandler, basicConfig, getLogger
 LOGS = getLogger("Heroku")
 
-REPO_URL = "https://terpantaukah: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@github.com/terpantaukah/Prime-Userbot"
+REPO_URL = "https://terpantaukah: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@github.com/terpantaukah/Nande-Telethon"
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
 def rm_r(path):
@@ -80,7 +80,7 @@ async def prime(bot, msg, en=False):
     await msg.reply(
           "Silakan Kirim Donasi buat Pemabaruan bot ini Semakin banyak donasi semakin aktif botnya",
       reply_markup=InlineKeyboardMarkup([[
-        InlineKeyboardButton("💎 Click here 💎", url="https://t.me/sip-Userbot/2")
+        InlineKeyboardButton("💎 Click here 💎", url="https://t.me/081548247681")
         ]]))
     await asyncio.sleep(10)
     abb = await msg.reply("Terimakasih Sudah donasi ☺")
@@ -170,7 +170,7 @@ async def prime(bot, msg, en=False):
     except requests.exceptions.HTTPError:
         await msg.reply("❌ Gagal membuat Heroku baru karena melebihi 5 Apps")
         return
-    await msg.reply("✅ Process deploy Nande - 𝚄𝚜𝚎𝚛𝚋𝚘𝚝, Please wait.. There will be a message from me when it's ready to deploy ✅... Waiting 3-5 minute")
+    await msg.reply("✅ Process deploy Nande-Telethon, Please wait.. There will be a message from me when it's ready to deploy ✅... Waiting 3-5 minute")
     if os.path.isdir("./Nande-Telethon-"):
         rm_r("./Nande-Telethon-/")
     repo = Repo.clone_from(REPO_URL,"./Nande-Telethon-/", branch="Nande-Telethon")
