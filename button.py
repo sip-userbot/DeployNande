@@ -27,11 +27,11 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup(Data.buttons),
             )
 
-    elif query in ["ayiin", "en"]:
+    elif query in ["nande", "en"]:
         await callback_query.answer()
         try:
-            if query == "ayiin":
-                await ayiin(bot, callback_query.message, en=True)
+            if query == "nande":
+                await nande(bot, callback_query.message, en=True)
         except Exception as e:
             await callback_query.message.reply(ERROR_MESSAGE.format(str(e)))
     
