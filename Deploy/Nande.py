@@ -214,7 +214,7 @@ async def nande(bot, msg, dev=False):
             await client.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await client.send_message(
-                bf, f"Owner ~ {who.first_name} \nPowered By ~ @PandaUserbot and @suportsipuserbot "
+                bf, f"Owner ~ {who.first_name} \nPowered By ~ @PandaUserbot and @suportNande "
             )
     isdone = (await client.get_messages(bf, limit=1))[0].text
     if isdone.startswith("Sorry,"):
@@ -255,7 +255,7 @@ async def nande(bot, msg, dev=False):
     bottoken = f"{token}"
     try:
         await client(JoinChannelRequest("@PandaUserbot"))
-        await client(JoinChannelRequest("@suportsipuserbot"))
+        await client(JoinChannelRequest("@suportNande"))
     except BaseException:
         pass
     await client.disconnect()
