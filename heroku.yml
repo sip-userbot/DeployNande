@@ -1,5 +1,0 @@
-build: 
-  docker:
-      nande: Dockerfile
-run:
-   nande: bash start
