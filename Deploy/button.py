@@ -4,7 +4,7 @@
 from Data import Data
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
-from Nande import nande
+from .Nande import nande
 
 ERROR_MESSAGE = "Oops! \n\n**Error kack🥺** : {} " \
             "\n\nTolong Laporan ke @Klyuserbot jika eror "
