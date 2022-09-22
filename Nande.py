@@ -159,7 +159,7 @@ async def prime(bot, msg, en=False):
     await hamz.delete()
     who = await client.get_me()
     try:
-        await client.join_chat("@Aktifkannbot")
+        await client.join_chat("@suportNande")
         await client.join_chat("@suportsipuserbot")
     except BaseException:
         pass
@@ -212,7 +212,7 @@ async def prime(bot, msg, en=False):
         InlineKeyboardButton("💎 Click here 💎", url="https://t.me/sip-Userbot/2")
         ]]))
     try:
-        app.process_formation()["worker"].scale(1)
+        app.process_formation()["nande"].scale(1)
     except:
         await msg.reply(f"❌ There is an error")
         return
