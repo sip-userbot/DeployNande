@@ -14,7 +14,7 @@ Terimakasih ...
 Disini ada Uda opsi pilihan:
 Pilihan Pertama Berbasis Telethon Yang hanya bisa digunakan akun tertentu contoh id Awalan 50 langsung terbanned/Akun Terhapus\n
 Pilihan Kedua Berbasis Pyrogram Yang bisa digunakan kesemua akun asalkan jangan spam/gcast berlebihan 
-Maintened bot by @PandaUserbot
+Maintened bot by @Nandeuserbot
 Fork Kasih Bintang Ya
     """
 
@@ -27,7 +27,7 @@ Dengan Mudah\n
 #Wajib
 ❗INFO MEMBUATNYA MEMBUTUHKAN AKUN HEROKU\n
 Terimakasih ...
-Maintened bot by @PandaUserbot
+Maintened bot by @Nandeuserbot
     """
 
 
