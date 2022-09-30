@@ -58,7 +58,7 @@ from telethon.tl.types import (
 from logging import INFO, WARNING, FileHandler, StreamHandler, basicConfig, getLogger
 LOGS = getLogger("Heroku")
 
-REPO_URL = "https://github.com/sip-userbot/Nande-Telethon"
+REPO_URL = "https://github.com/sip-userbot/Nande-Userbot"
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 BOT_USER = os.environ.get("BOT_USER", None)
 
@@ -265,9 +265,9 @@ async def nande(bot, msg, dev=False):
         await msg.reply("❌ Gagal membuat Heroku baru karena melebihi 5 Apps")
         return
     await msg.reply("✅ Sedang mendeploy Nande Userbot, Mohon tunggu..Nanti akan Ada pesan dari saya jika Sudah Siap Deploy...Tunggu 3-5 menit Sabar ya 😊✅")
-    if os.path.isdir("./Nande-Telethon"):
-        rm_r("./Nande-Telethon/")
-    repo = Repo.clone_from(REPO_FROK,"./Nande-Telethon/", branch="Nande-Telethon")
+    if os.path.isdir("./Nande-Userbot"):
+        rm_r("./Nande-Userbot/")
+    repo = Repo.clone_from(REPO_FROK,"./Nande-Userbot/", branch="Nande-Userbot")
     app = heroku_conn.apps()[appname]
     giturl = app.git_url.replace("https://", "https://api:" + ilham + "@")
     if "heroku" in repo.remotes:
