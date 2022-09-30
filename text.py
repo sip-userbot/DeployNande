@@ -13,12 +13,12 @@ Dengan Mudah\n
 #Wajib
 ❗INFO MEMBUATNYA MEMBUTUHKAN AKUN HEROKU\n
 Terimakasih ...
-Maintened bot by @suportsipuserbot
+Maintened bot by @Nandesupport
     """
 
 
     # 
     buttons = [     
-        [InlineKeyboardButton("Nande-Userbot", callback_data="ayiin")],]
+        [InlineKeyboardButton("Nande-Userbot", callback_data="nande")],]
    
     
